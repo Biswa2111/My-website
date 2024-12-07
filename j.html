@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>তোমার জন্য কবিতা</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kalpurush', Arial, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            z-index: 3;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.8;
+            margin: 20px 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #ff6f61;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 0 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background 0.3s;
+        }
+        button:hover {
+            background: #ff4e50;
+            transform: scale(1.1);
+        }
+        button:active {
+            background: #e63946;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>তোমার জন্য...</h1>
+        <p>
+            ক্লাসের প্রতিটি দিনে,<br>
+            তোমার হাসি যেন এক স্বপ্নের ছায়া। <br>
+            প্রশ্নের জবাবে যখন বলো,<br>
+            আমার হৃদয় থেমে যায় সেখানেই। <br><br>
+            জানি না কীভাবে বলব কথাটা,<br>
+            তুমি কি শুনবে আমার মনের কথা? <br>
+            ক্লাসমেট হলেও মনে তো চায়, <br>
+            তুমি হবে আমার জীবনসাথী, এটাই প্রার্থনা।
+        </p>
+        <div class="button-container">
+            <button onclick="alert('তুমি হ্যাঁ বললে প্রতিদিন আরও সুন্দর হবে! ❤️')">হ্যাঁ</button>
+            <button onclick="alert('তোমার না মানে বন্ধুত্ব রইলো! 😊')">না</button>
+        </div>
+    </div>
+</body>
+</html>
